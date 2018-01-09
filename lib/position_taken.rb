@@ -1,7 +1,7 @@
 # code your #position_taken? method here!
 def position_taken?(board,index)
-  board[index] == " " || ""
-  " " && "" == false
-  board[index] == "X" || "O"
-  "X" && "O" == true
+  if board[index] == "X" || "O"
+    true
+  else board[index] == " " || "" || nil
+    false
 end
